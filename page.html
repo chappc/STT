@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="stt.js"></script>
+    <style>
+      div.side-scroll {
+        overflow: hidden;
+      }
+      div.side-scroll:hover {
+        overflow-x: auto;
+      }
+      div#get-code {
+        display:none;
+        border-style:inset;
+      }
+      div#set-code {
+        display:none;
+        border-style:inset;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="enters">
+      <ul class="ins"><input class="s" type="text" name="statement0"/></ul>
+      <ul>
+        <input id="adds" type="button" value="+"/>
+        <input id="dels" type="button" value="&ndash;"/>
+        <input id="subs" type="button" value="Submit"/>
+      </ul>
+    </span>
+    <div id="err-msg"></div>
+    <div id="truth-table" class="side-scroll">
+      <table class="tt">
+        <tr class="stlist"></tr>
+        <tr class="v0"></tr>
+      </table>
+    </div>
+    <div id="context">
+      <div>
+        <input id="showc" type="button" value="Load Table"/>
+        <input id="getc" type="button" value="Get Table Data"/>
+      </div>
+      <div id="get-code"></div>
+      <div id="set-code"></div>
+      </ul>
+    </div>
+  </body>
+</html>
